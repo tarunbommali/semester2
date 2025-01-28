@@ -1,7 +1,6 @@
 export  const timetable = {
-    semester: "MCA 1-11 (R23)",
+    semester: "MCA 1-II (R23)",
     academicYear: "2024-2025",
-    effectiveDate: "2025-01-27",
     schedule: [
       {
         time: "9:30-11:00",

@@ -44,15 +44,15 @@ const Home = () => {
     <div className="p-4">
       <Header onSelect={handleSelect} />
       <div className="mt-4">
-        {filteredSubject ? (
+        {selectedCourseCode === "timetable" ? (
+          <TimeTable />
+        ) : filteredSubject ? (
           showLabDetails && labDetails ? (
-            // Lab Details
             <LabDetails
               labDetails={labDetails}
               handleRegularClick={handleRegularClick}
             />
           ) : (
-            // Regular Subject Details
             <RegularSubjectDetails
               filteredSubject={filteredSubject}
               handleLabClick={handleLabClick}
