@@ -37,7 +37,7 @@ export  const timetable = {
         saturday: "Python Brdige",
         monday: "DBMS",
         tuesday: "ES",
-        wednesday: "Java Programming Lab",
+        wednesday: "DAA",
         friday: "Java",
       },
       {
