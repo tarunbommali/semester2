@@ -1,5 +1,6 @@
+import CourseOutcomes from "./CourseOutcomes";
 /* eslint-disable react/prop-types */
-export const LabDetails = ({ labDetails, handleRegularClick }) => {
+export const LabDetails = ({ labDetails }) => {
   if (!labDetails) {
     return <p className="text-gray-500">No lab details available.</p>;
   }
@@ -9,21 +10,6 @@ export const LabDetails = ({ labDetails, handleRegularClick }) => {
       <h2 className="text-xl text-[#22252d] font-thin my-4">
         {`${labDetails.course_title} (${labDetails.course_code_lab})`}
       </h2>
-
-      <div className="flex items-center">
-        <button
-          className="text-[#1f1f1f] text-lg font-thin border border-[#d1d9e0] rounded-md mx-2 py-2 px-4 hover:bg-[#0056b3] hover:text-[#f9fafb] transition duration-200"
-          onClick={handleRegularClick}
-        >
-          Regular
-        </button>
-        <button
-          className="text-lg font-thin border rounded-md mx-2 py-2 px-4 bg-[#0056b3] text-[#f9fafb] border-transparent cursor-not-allowed"
-          disabled={true} // Lab button is active and disabled
-        >
-          Lab
-        </button>
-      </div>
 
       <h3 className="mt-4 text-xl font-semibold">Experiments:</h3>
       {/* Use the correct lab experiment properties */}
@@ -55,6 +41,9 @@ export const LabDetails = ({ labDetails, handleRegularClick }) => {
           <li key={index}>{outcome}</li>
         ))}
       </ul>
+
+      {/* Pass labDetails.course_outcomes instead of course_outcomes */}
+      <CourseOutcomes course_outcomes={labDetails.course_outcomes} />
 
       <h3 className="mt-4 text-xl font-semibold">Lab Objectives:</h3>
       <ul className="list-disc pl-6">

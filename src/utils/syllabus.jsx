@@ -138,7 +138,137 @@ export const subjectSyllabus = [
       }
     ]
   },
-
+  {
+    "course_title": "Artificial Intelligence",
+    "course_code": "MCA2105",
+    "course_objectives": [
+      "To have a basic proficiency in a traditional AI language including an ability to write simple to intermediate programs and an ability to understand code written in that language.",
+      "To have an understanding of the basic issues of knowledge representation and blind and heuristic search, as well as an understanding of other topics such as minimax and resolution that play an important role in AI programs.",
+      "To have a basic understanding of some of the more advanced topics of AI."
+    ],
+    "lab": "no",
+    "units": [
+      {
+        "unit_title": "UNIT I: Introduction",
+        "topics": [
+          "History of AI",
+          "Intelligent Systems",
+          "Foundations of AI",
+          "Applications of AI",
+          "Tic-Tac-Toe Game Playing",
+          "Development of AI Languages",
+          "Current Trends in AI"
+        ]
+      },
+      {
+        "unit_title": "UNIT II: Problem Solving",
+        "topics": [
+          "State-Space Search and Control Strategies",
+          "Introduction to Problem Solving",
+          "Characteristics of Problems",
+          "Exhaustive Searches",
+          "Heuristic Search Techniques",
+          "Iterative Deepening A*",
+          "Constraint Satisfaction",
+          "Problem Reduction and Game Playing",
+          "Alpha-Beta Pruning",
+          "Two-Player Perfect Information Games"
+        ]
+      },
+      {
+        "unit_title": "UNIT III: Logic Concepts",
+        "topics": [
+          "Introduction to Logic Concepts",
+          "Propositional Calculus",
+          "Propositional Logic",
+          "Natural Deduction System",
+          "Axiomatic System",
+          "Semantic Tableau System in Propositional Logic",
+          "Resolution Refutation in Propositional Logic",
+          "Predicate Logic"
+        ]
+      },
+      {
+        "unit_title": "UNIT IV: Knowledge Representation",
+        "topics": [
+          "Introduction to Knowledge Representation",
+          "Approaches to Knowledge Representation",
+          "Knowledge Representation using Semantic Networks",
+          "Extended Semantic Networks for KR",
+          "Knowledge Representation using Frames",
+          "Advanced Knowledge Representation Techniques",
+          "Conceptual Dependency Theory",
+          "Script Structure",
+          "CYC Theory",
+          "Case Grammars",
+          "Semantic Web"
+        ]
+      },
+      {
+        "unit_title": "UNIT V: Expert Systems and Uncertainty Measures",
+        "topics": [
+          "Introduction to Expert Systems",
+          "Phases in Building Expert Systems",
+          "Expert Systems vs. Traditional Systems",
+          "Uncertainty Measures in AI",
+          "Probability Theory",
+          "Bayesian Belief Networks",
+          "Certainty Factor Theory",
+          "Dempster-Shafer Theory",
+          "Fuzzy Sets and Fuzzy Logic",
+          "Fuzzy Set Operations",
+          "Types of Membership Functions",
+          "Multi-Valued Logic",
+          "Fuzzy Logic",
+          "Linguistic Variables and Hedges",
+          "Fuzzy Propositions",
+          "Inference Rules for Fuzzy Propositions",
+          "Fuzzy Systems"
+        ]
+      }
+    ],
+    "course_outcomes": [
+      "Outline problems that are amenable to solution by AI methods, and which AI methods may be suited to solving a given problem.",
+      "Apply the language/framework of different AI methods for a given problem.",
+      "Implement basic AI algorithms.",
+      "Design and carry out an empirical evaluation of different algorithms on problem formalization and state the conclusions that the evaluation supports."
+    ],
+    "textbooks": [
+      {
+        "title": "Artificial Intelligence",
+        "edition": "1/e",
+        "authors": ["Saroj Kaushik"],
+        "publisher": "CENGAGE Learning"
+      },
+      {
+        "title": "Artificial Intelligence: A Modern Approach",
+        "edition": "2/e",
+        "authors": ["Stuart Russell", "Peter Norvig"],
+        "publisher": "PEA"
+      }
+    ],
+    "reference_books": [
+      {
+        "title": "Artificial Intelligence",
+        "edition": "1/e",
+        "authors": ["Deepak Khemani"],
+        "publisher": "TMH"
+      },
+      {
+        "title": "Introduction to Artificial Intelligence",
+        "edition": "1/e",
+        "authors": ["Patterson"],
+        "publisher": "PHI"
+      },
+      {
+        "title": "Artificial Intelligence: Structures and Strategies for Complex Problem Solving",
+        "edition": "1/e",
+        "authors": ["George"],
+        "publisher": "Pearson"
+      }
+    ]
+  }
+,  
   {
     "course_title": "Computer Networks",
     "course_code": "MCA2102",
