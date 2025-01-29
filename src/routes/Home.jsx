@@ -6,7 +6,7 @@ import TimeTable from "../components/TimeTable";
 import { RegularSubjectDetails } from "../components/RegularSubjectDetails";
 import { LabDetails } from "../components/LabDetails";
 
-const Home = () => {
+ const Home = () => {
   const [selectedCourseCode, setSelectedCourseCode] = useState(""); // Store the selected course code
   const [showLabDetails, setShowLabDetails] = useState(false); // State to track if lab details are shown
 
@@ -35,11 +35,11 @@ const Home = () => {
   const labDetails = (() => {
     switch (selectedCourseCode) {
       case "MCA2101":
-        return dbmsLab[0];
+        return dbmsLab[0];  // DBMS lab details
       case "MCA2102":
-        return computerNetworkLab;
+        return computerNetworkLab; // Computer Network lab details
       case "MCA1103":
-        return javaLab;
+        return javaLab; // Java lab details
       default:
         return null;
     }
@@ -56,22 +56,16 @@ const Home = () => {
           <div>
             {/* Course Buttons (Regular and Lab Details) */}
             <div className="flex items-center">
-              {/* Regular Button with Dynamic Class */}
               <button
-                className={`text-lg font-thin border rounded-md mx-2 py-2 px-4 ${
-                  !showLabDetails ? "bg-[#0056b3] text-[#f9fafb]" : "text-[#1f1f1f] hover:bg-[#0056b3] hover:text-[#f9fafb]"
-                }`}
+                className={`text-lg font-thin border rounded-md mx-2 py-2 px-4 ${!showLabDetails ? "bg-[#0056b3] text-[#f9fafb]" : "text-[#1f1f1f] hover:bg-[#0056b3] hover:text-[#f9fafb]"}`}
                 onClick={handleRegularClick}
               >
                 Regular
               </button>
 
-              {/* Lab Button with Dynamic Class */}
               {filteredSubject.lab === "yes" && (
                 <button
-                  className={`text-lg font-thin border rounded-md mx-2 py-2 px-4 ${
-                    showLabDetails ? "bg-[#0056b3] text-[#f9fafb]" : "hover:bg-[#0056b3] hover:text-[#f9fafb] transition duration-200"
-                  }`}
+                  className={`text-lg font-thin border rounded-md mx-2 py-2 px-4 ${showLabDetails ? "bg-[#0056b3] text-[#f9fafb]" : "hover:bg-[#0056b3] hover:text-[#f9fafb]"}`}
                   onClick={handleLabClick}
                 >
                   View Lab Details
@@ -82,16 +76,10 @@ const Home = () => {
             {/* Show either Regular Subject Details or Lab Details */}
             {showLabDetails && labDetails ? (
               <div>
-                <LabDetails
-                  labDetails={labDetails}
-                  handleRegularClick={handleRegularClick}
-                />
+                <LabDetails labDetails={labDetails} handleRegularClick={handleRegularClick} />
               </div>
             ) : (
-              <RegularSubjectDetails
-                filteredSubject={filteredSubject}
-                handleLabClick={handleLabClick}
-              />
+              <RegularSubjectDetails filteredSubject={filteredSubject} handleLabClick={handleLabClick} />
             )}
           </div>
         ) : (
@@ -102,4 +90,5 @@ const Home = () => {
   );
 };
 
-export default Home;
+
+export default Home
